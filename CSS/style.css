@@ -160,7 +160,7 @@ nav li:first-child{
 .projectDetails{
     background-color: rgba(237, 240, 244, 0.101);
     backdrop-filter: blur(18px);
-   color: #a3dfbd;
+    color: #a3dfbd;
     padding: 10px;
     display: flex;
     justify-content: center;
