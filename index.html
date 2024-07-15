@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YR</title>
     <link rel="icon" href="img/Designer.png" style="border-radius: 50%" />
-   
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/style.css">
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
         </li>
@@ -24,14 +32,186 @@
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
         </li>
+      </ul> -->
+
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideBar()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e8eaed"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </li>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Projects</a>
+        </li>
+        <li>
+          <a href="#">About me</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
       </ul>
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">...</div>
-        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
-        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
-        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+      <ul
+        style="
+          border: 5px solid
+            rgba(rgb(0, 60, 255), rgb(228, 35, 238), rgb(54, 235, 255), 0.2);
+        "
+      >
+        <li class="myLogo">
+          ><img
+            src="img/Designer.png"
+            alt=""
+            style="width: 10vh; border-radius: 50%; margin-top: 35px"
+          />
+        </li>
+        <li class="hideOnSmallScreen">
+          <a href="#">Projects</a>
+        </li>
+        <li class="hideOnSmallScreen">
+          <a href="#">About me</a>
+        </li>
+        <li class="hideOnSmallScreen">
+          <a href="#">Contact</a>
+        </li>
+
+        <li class="btnMenue" onclick="showBar()">
+          <a href="#"
+            ><svg
+              fill="#03160b"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e8eaed"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <br />
+
+    <div class="tab-content" id="myTabContent">
+      <div
+        class="tab-pane fade show active"
+        id="home-tab-pane"
+        role="tabpanel"
+        aria-labelledby="home-tab"
+        tabindex="0"
+      >
+        ...
       </div>
-    <h3 id="h">Hello...I'm,</h3>
-    <h1 id="hM">Yasantha Ravindu</h1>
+      <div
+        class="tab-pane fade"
+        id="profile-tab-pane"
+        role="tabpanel"
+        aria-labelledby="profile-tab"
+        tabindex="0"
+      >
+        ...
+      </div>
+      <div
+        class="tab-pane fade"
+        id="contact-tab-pane"
+        role="tabpanel"
+        aria-labelledby="contact-tab"
+        tabindex="0"
+      >
+        ...
+      </div>
+      <div
+        class="tab-pane fade"
+        id="disabled-tab-pane"
+        role="tabpanel"
+        aria-labelledby="disabled-tab"
+        tabindex="0"
+      >
+        ...
+      </div>
+    </div>
+    <h3 class="h">Hello...I'm,</h3>
+    <h2 class="hS">Yasantha Ravindu</h2>
+    <h1 class="hM">Full-Stack Developer</h1>
+    <div class="para">
+      <p id="para">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus
+        aspernatur asperiores obcaecati odio harum numquam ab cupiditate
+        voluptatum cum. Tenetur modi at, vel et quaerat delectus repudiandae
+        ipsa voluptas itaque?
+      </p>
+    </div>
+    <hr class="hLine" />
+    <div class="container">
+      <h2 class="hS" style="margin: 20px">My Projects</h2>
+      <br />
+      <div class="table">
+        <table>
+          <tr>
+            <td>
+              <div class="imageP">
+                <img
+                  src="img/oopLevel2Project.png"
+                  style="margin-left: 100px; align-items: center"
+                  width="50%"
+                  alt=""
+                />
+              </div>
+              <br />
+            </td>
+            <br />
+            <td>
+              <div class="projectDetails">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi distinctio provident dicta earum blanditiis animi
+                  sunt commodi error, veniam doloribus temporibus officia
+                  reiciendis, voluptate expedita est. Rerum veritatis dolor
+                  ipsam.
+                </p>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div class="projectDetails">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi distinctio provident dicta earum blanditiis animi
+                  sunt commodi error, veniam doloribus temporibus officia
+                  reiciendis, voluptate expedita est. Rerum veritatis dolor
+                  ipsam.
+                </p>
+              </div>
+            </td>
+            <br />
+            <td>
+              <div class="imageP">
+                <img
+                  src="img/oopLevel2Project.png"
+                  style="margin-left: 100px; align-items: center"
+                  width="50%"
+                  alt=""
+                />
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>
