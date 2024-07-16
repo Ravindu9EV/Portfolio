@@ -180,9 +180,15 @@ nav li:first-child{
     background-image: linear-gradient(to bottom right,rgb(108, 221, 102),blue);
     z-index: -1;
 }
+#mQ{
+    width: 100%;
+    background: #a3dfbd5a;
+    
+}
 @media (max-width:800px ) {
     body{
         display: vertical;
+        backdrop-filter: blur(10px);
     }
 
     .hideOnSmallScreen{
@@ -197,10 +203,24 @@ nav li:first-child{
 
 @media  (max-width: 400px) {
     
+    body{
+        overflow-x: auto;
+    }
     .sidebar{
         width: 100%;
     }
     .myLogo{
         display: none;
     }
+   td{
+        margin: 15px;
+    }
+    /* .image{
+        margin:25px
+    } */
+   
+    tr{
+        display: grid;
+    }
+    
 }
